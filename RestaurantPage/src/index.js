@@ -1,3 +1,11 @@
 console.log("Roq Out Ramen");
 
-alert("This does work");
+function component() {
+    const element = document.createElement('div');
+
+    element.innerHTML = "Hello";
+
+    return element;
+}
+
+document.body.appendChild(component());

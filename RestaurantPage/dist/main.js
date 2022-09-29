@@ -1,1 +1,1 @@
-console.log("Bacon Grease"),alert("This does work");
+console.log("Roq Out Ramen"),document.body.appendChild(function(){const e=document.createElement("div");return e.innerHTML="Hello",e}());
