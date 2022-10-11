@@ -1,4 +1,44 @@
 body {
-    color: purple;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(to left, purple 10%, burlywood);
     background-color: burlywood;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+
+ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+}
+
+#content {
+    /*Add whiskey background image later*/
+    justify-self: center;
+    background-color: #cc8e69;
+    color: rgb(99, 2, 99);
+    max-width: 80%;
+    text-align: center;
+    
+    /*Creating cup effect */
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+
+}
+
+.ramen-outer {
+    border-style:ridge;
+    border-color: burlywood;
+    border-left:0;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: 5px;
 }
