@@ -14,7 +14,12 @@ module.exports = {
               'style-loader',
               'css-loader'
             ]
-          }
+          },
+
+          {
+            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            type: 'asset/resource',
+          },
         ]
       }
 };

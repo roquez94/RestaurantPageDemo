@@ -19,18 +19,23 @@ li {
 
 #content {
     /*Add whiskey background image later*/
+    background-image: url('/home/roquez/coding/eduprojects/RestaurantPageDemo/RestaurantPage/src/images/Small-whiskey-rocks-black-background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*Credits for image*/
+    /*<a href="https://www.freepik.com/free-photo/whiskey-rocks-black-background_15004902.htm#query=whiskey&position=9&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik */
     justify-self: center;
-    background-color: #cc8e69;
-    color: rgb(99, 2, 99);
-    max-width: 80%;
+    color: white;
+    text-shadow:2px 2px purple;
+    max-width: 100%;
     text-align: center;
     
     /*Creating cup effect */
     bottom: 0;
     left: 0;
     right: 0; 
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 
 }
 
@@ -40,5 +45,5 @@ li {
     border-left:0;
     border-right: 0;
     border-bottom: 0;
-    margin-top: 5px;
+    margin-top: 5px; 
 }
