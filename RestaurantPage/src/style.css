@@ -3,8 +3,6 @@ body {
     color: white;
     background: linear-gradient(to left, purple 10%, burlywood);
     background-color: burlywood;
-    display: grid;
-    grid-template-rows: 10% 80% 10%;
 }
 
 
@@ -17,6 +15,14 @@ li {
     list-style: none;
 }
 
+header {
+    background-color: transparent;
+}
+
+footer {
+    background-color: transparent;
+}
+
 #content {
     /*Add whiskey background image later*/
     background-image: url('/home/roquez/coding/eduprojects/RestaurantPageDemo/RestaurantPage/src/images/Small-whiskey-rocks-black-background.jpg');
@@ -27,7 +33,8 @@ li {
     justify-self: center;
     color: white;
     text-shadow:2px 2px purple;
-    max-width: 100%;
+    min-width: 90vw;
+    min-height: 90vh;
     text-align: center;
     
     /*Creating cup effect */
@@ -36,6 +43,9 @@ li {
     right: 0; 
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+
+    display: grid;
+    grid-template-rows: 10% 90% 10%;
 
 }
 

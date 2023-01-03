@@ -1,4 +1,6 @@
 import "./style.css";
+import './jsModules/firstload.js';
+import { firstload } from "./jsModules/firstload.js";
 
 //needs fixing (11/23/22) - import images from directory/folder
 function importAll(r) {
@@ -11,13 +13,11 @@ function importAll(r) {
 console.log("Roq Out Ramen");
 
 function component() {
-    //const element = document.createElement('div');
+    // const element = document.createElement('div');
+    // element.innerHTML = "Hello";
+    // return element;
+    return firstload();
 
-    //element.innerHTML = "Hello";
-
-    //return element;
-
-    //add html files into after completing html templates
 }
 
 document.body.appendChild(component());
