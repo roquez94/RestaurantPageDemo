@@ -10,15 +10,18 @@ export function firstload() {
     const header = document.createElement('header');
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
-    //onClick links here
+    //onClick links here after DOM content has loaded
     const homeLi = document.createElement('li');
       homeLi.innerHTML = "Home";
       homeLi.id="home";
+
     const menuLi = document.createElement('li');
       menuLi.innerHTML = "Menu";
-      menuLi.id="menu";
-      document.getElementById("menu").onclick = menuPage();
-      
+      menuLi.id = "menu";
+      document.addEventListener('DOMContentLoaded', function () {
+        menuLi.addEventListener('click', menuPage, false);
+      });
+
     const contactLi = document.createElement('li');
       contactLi.innerHTML = "Contact";
       contactLi.id="contact";
@@ -31,6 +34,8 @@ export function firstload() {
     nav.appendChild(ul);
     header.appendChild(nav);
     content.appendChild(header);
+
+
 
     //create page-content div container & contents
       //Main page heading
