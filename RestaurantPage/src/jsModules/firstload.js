@@ -1,4 +1,5 @@
 import { menuPage } from "./menuPage";
+import { contactPage } from "./contact";
 
 export function firstload() {
 
@@ -10,6 +11,7 @@ export function firstload() {
     const header = document.createElement('header');
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
+
     //onClick links here after DOM content has loaded
     const homeLi = document.createElement('li');
       homeLi.innerHTML = "Home";
@@ -18,13 +20,11 @@ export function firstload() {
     const menuLi = document.createElement('li');
       menuLi.innerHTML = "Menu";
       menuLi.id = "menu";
-      document.addEventListener('DOMContentLoaded', function () {
-        menuLi.addEventListener('click', menuPage, false);
-      });
 
     const contactLi = document.createElement('li');
       contactLi.innerHTML = "Contact";
       contactLi.id="contact";
+
       
     ul.className = "tab-list";
     ul.appendChild(homeLi);
@@ -35,7 +35,9 @@ export function firstload() {
     header.appendChild(nav);
     content.appendChild(header);
 
-
+    document.addEventListener('DOMContentLoaded', function () {
+      menuLi.addEventListener('click', menuPage, false);
+    });
 
     //create page-content div container & contents
       //Main page heading
@@ -63,8 +65,5 @@ export function firstload() {
 
     content.appendChild(pageContent);
 
-
-
     return content;
 }
-
