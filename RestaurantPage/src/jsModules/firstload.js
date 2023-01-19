@@ -42,6 +42,7 @@ export function firstload() {
     //create page-content div container & contents
       //Main page heading
     const pageContent = document.createElement('div');
+    pageContent.id = "pageContent";
     const heading = document.createElement('div');
       heading.innerHTML = "<h1>Roq's Rum & Ramen</h1>";
     pageContent.appendChild(heading);
@@ -62,7 +63,7 @@ export function firstload() {
     ramenInner3.className = "ramen-outer";
     pageContent.appendChild(ramenInner3);
 
-
+   
     content.appendChild(pageContent);
 
     return content;
