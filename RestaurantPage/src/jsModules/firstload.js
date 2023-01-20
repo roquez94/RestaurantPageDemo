@@ -1,5 +1,5 @@
 import { menuPage } from "./menuPage";
-import { contactPage } from "./contact";
+import { contactPage } from "./contactPage";
 
 export function firstload() {
 
@@ -37,6 +37,10 @@ export function firstload() {
 
     document.addEventListener('DOMContentLoaded', function () {
       menuLi.addEventListener('click', menuPage, false);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      contactLi.addEventListener('click', contactPage, false);
     });
 
     //create page-content div container & contents
