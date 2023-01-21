@@ -1,6 +1,6 @@
 export function menuPage() {
 
-   //create page-content div container & contents
+   //create menu-content div container & contents
       //Menu page heading
     const menupageContent = document.createElement('div');
     const heading = document.createElement('div');

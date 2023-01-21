@@ -2,7 +2,7 @@ export function contactPage() {
    
     //change up to match contact theme
     
-  //create page-content div container & contents
+  //create contact-content div container & contents
       //Menu page heading
       const contactpageContent = document.createElement('div');
       const heading = document.createElement('div');
